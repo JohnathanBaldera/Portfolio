@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Johnathan Baldera Portfolio</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <div class="logo">
-        <img src="" alt="" />
+        <img src="./img/FAV A.jpg" alt="BaldyTechVet Logo" class="logo__img" />
       </div>
       <button class="nav-toggle" aria-label="toggle navigation">
         <span class="hamburger"></span>
@@ -25,14 +29,14 @@
             <a href="#home" class="nav__link">Home</a>
           </li>
           <li>
-            <a href="#portfolio" class="nav__link">Portfolio</a>
+            <a href="#work" class="nav__link">Portfolio</a>
           </li>
           <li>
             <a href="#about" class="nav__link">About Me</a>
           </li>
-          <li>
+          <!-- <li>
             <a href="#resume" class="nav__link">Resume</a>
-          </li>
+          </li> -->
         </ul>
       </nav>
     </header>
@@ -40,9 +44,9 @@
     <!-- Introduction -->
     <section class="intro" id="home">
       <h1 class="section__title section__title--intro">
-        Hey, I am <strong>Johnathan Baldera</strong>
+        I am <strong>Johnathan Baldera</strong>
       </h1>
-      <p class="sub__subtitle section__subtitle--intro">Software Engineer</p>
+      <strong><p class="sub__subtitle section__subtitle--intro">Software Engineer</p></strong>
       <img
         class="intro__img"
         src="./img/Professional Full.jpeg"
@@ -51,66 +55,78 @@
     </section>
 
     <!-- Portfolio -->
-    <section class="my-portfolio" id="portfolio">
-      <h2 class="section__title section__title--services">My Work</h2>
-      <div class="projects">
-        <div class="project">
-          <h3>VA Disability Calculator</h3>
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">Projects</h2>
+      <div class="portfolio">
+
+        <div class="portfolio__item">
+          <h3 class="portfolio__item--title">VA Disability Calculator</h3>
+          <a href="https://johnathanbaldera.github.io/EasyVAMath/" target="_blank">
+            <img class="portfolio__img" src="./img/VA Disability Calculator.png" alt="Photo of My Veteran Disability Calculator">
+          </a>
+          <a href="https://johnathanbaldera.github.io/EasyVAMath/" class="portfolio__link" target="_blank">Hosted Project</a>
+          <a href="https://github.com/JohnathanBaldera/EasyVAMath" class="portfolio__link" target="_blank">GitHub Link</a>
         </div>
-        <div class="project">
-          <h3>Coming Soon!</h3>
+
+        <div class="portfolio__item">
+          <h3 class="portfolio__item--title">Coming Soon!</h3>
+          <a href="" target="_blank">
+            <img class="portfolio__img" src="" alt="">
+          </a>
+          <a href="" class="portfolio__link" target="_blank">Hosted Project</a>
+          <a href="" class="portfolio__link" target="_blank">GitHub Link</a>
         </div>
-        <div class="project">
-          <h3>Coming Soon!</h3>
+
+        <div class="portfolio__item">
+          <h3 class="portfolio__item--title">Coming Soon!</h3>
+          <a href="" target="_blank">
+            <img class="portfolio__img" src="" alt="">
+          </a>
+          <a href="" class="portfolio__link" target="_blank">Hosted Project</a>
+          <a href="" class="portfolio__link" target="_blank">GitHub Link</a>
         </div>
       </div>
     </section>
 
     <!-- About Me  -->
-    <section class="about-me" id="about">
+    <section class="about_me" id="about">
       <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about"></p>
+      <p class="section__subtitle section__subtitle--about">Army Veteran to Software Engineer</p>
 
       <div class="about-me__body">
-        <p></p>
-        <p></p>
-
-        <img src="" alt="" />
+        <p>At the age of 18, I joined the Army as a 35T - Military Intelligence Systems Maintainer.  As I always grew up with a love for computers and video games, I was excited to start a new journey where I was going to be working on Systems all over the world while serving my country.</p>
+        <p>While serving, I made education a priority and started working on my bachelor's degree in Information Technology with a concentration on Web Development.  This concentration opened the world of Software Engineering for me and ever since, I was hooked.</p>
+        <p>Today, I am getting ready for my transition away from the military to pursue a career in tech full-time where I wish to work on the latest technologies available.  I am currently pursuing my Master's in Computer Science at Georgia Institute of Technology.</p>
       </div>
-    </section>
-
-    <!-- Resume -->
-    <section class="about-me" id="about">
-      <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about"></p>
-
-      <div class="about-me__body">
-        <p></p>
-        <p></p>
-
-        <img src="" alt="" />
-      </div>
+      
+      <img src="./img/IMG_0658.jpeg" alt="" class="about-me__img">
+      
     </section>
 
     <!-- Footer -->
-    <footer>
-      <a href="mailto:johnathanbaldera@gmail.com" class="footer__link"
-        >JohnathanBaldera@gmail.com</a
-      >
+    <footer class="footer">
+      <a href="mailto:johnathanbaldera@gmail.com" class="footer__link">
+        JohnathanBaldera@gmail.com
+        </a>
       <ul class="social-list">
         <li class="social-list__item">
-          <a href="" class="social-list__link"></a>
+          <a href="https://github.com/JohnathanBaldera" class="social-list__link">
+            <i class="fab fa-github"></i>
+          </a>
         </li>
         <li class="social-list__item">
-          <a href="" class="social-list__link"></a>
+          <a href="https://twitter.com/JohnathanBaldy" class="social-list__link">
+            <i class="fab fa-twitter-square"></i>
+          </a>
         </li>
         <li class="social-list__item">
-          <a href="" class="social-list__link"></a>
-        </li>
-        <li class="social-list__item">
-          <a href="" class="social-list__link"></a>
+          <a href="https://www.linkedin.com/in/johnathanbaldera/" class="social-list__link">
+            <i class="fab fa-linkedin"></i>
+          </a>
         </li>
       </ul>
     </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>
